@@ -1,0 +1,139 @@
+Body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: beige;
+    margin-top: -10px;
+    height: 40px;
+    width: 101%;
+    margin-left: -10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.nav-links {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+    margin-left: 30px;
+}
+
+.nav-links:hover {
+    font-weight: bold;
+}
+
+.nav-links:active {
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.p-main {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.sec {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.section8, .section6 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.section61, .section62 {
+    background-color: #000;
+    color: #fff;
+    border: 5px solid #fff;
+    padding-bottom: 10px;
+} 
+
+.section61 > button, .section62 > button {
+    background-color: #fff;
+    color: #000;
+}
+
+h3 {
+    text-align: center;
+}
+
+.section81 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+input, textarea, form > button {
+   padding: 10px;
+   margin-bottom: 30px;
+}
+
+form > button {
+    width: 400px;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 900px) {
+    .section6 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .section8 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section81 {
+        width: 120px;
+        margin-left: 60px;
+    }
+    nav {
+       padding-bottom: 20px; 
+    }
+    .nav-links:last-of-type {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+       padding-bottom: 20px; 
+       padding-top: -100px;
+       height: 70px;
+    }
+}
