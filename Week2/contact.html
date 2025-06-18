@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <script src="formvalidation.js"></script>
 </head>
 <body>
     <!-- Create a section container -->
@@ -12,17 +13,20 @@
         <!-- Have a title for the form -->
         <h1>Contact Us</h1>
         <!-- Create a form to contain all form elements -->
-        <form action="">
+        <form id="Form" onsubmit="return validateForm()">
             <!-- Create an input for the name -->            
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Name" id="name">
+            <p id="nameError" class="error"></p>
             <!-- Create an input for the email -->
-            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Email" id="email">
+            <p id="emailError" class="error"></p>
             <!-- Create an input for the phone number -->
-            <input type="number" placeholder="Phone Number">
+            <input type="number" placeholder="Phone Number" id="number">
             <!-- Create a textarea to send a message -->
-            <textarea name="" id="" placeholder="message">
+            <textarea placeholder="Message" id="message">
                 
             </textarea>
+            <p id="messageError" class="error"></p>
             <!-- Then finally create a button to submit the form -->
             <button type="submit">Send</button>
         </form>
