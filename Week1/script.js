@@ -1,25 +1,29 @@
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const number = document.getElementById("number");
+      function validateForm()  {
+  let isValid = true;
 
-    let isValid = true;
+  document.getElementById("nameError").textContent = "";
+  document.getElementById("emailError").textContent = "";
+  document.getElementById("messageError").textContent = "";
 
-    if (name === "" || /\d/.test(name)) {
-        nameErr.textContent = "Please enter your name properly.";
-        isValid = false;
-    }
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
-    if (email === "" || !email.includes("@") || !email.includes(".")) {
-        emailErr.textContent = "Please enter a valid email address.";
-        isValid = false;
-    }
+    if (name === "") {
+    document.getElementById("nameError").textContent = ("Enter your name");
+    isValid = false;
+  }
 
-    if (number === "" ) {
-        passErr.textContent = "Please enter a phone number with your country's dialing code at the start";
-        isValid = false;
-    }
-    else {
-        return;
-    }
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+    document.getElementById("emailError").textContent = "Enter a valid email address";
+    isValid = false;
+  }
 
+  if (message === "") {
+    document.getElementById("messageError").textContent = "Enter a valid message";
+    isValid = false;
+  }
 
+  return isValid;
+}

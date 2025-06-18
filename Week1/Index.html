@@ -109,14 +109,17 @@
         <hr>
     </form>
     <div class="section8">
-    <form class="section81" id="Form">
+    <form class="section81" id="Form" onsubmit="return validateForm()">
         <h4 class="last">CONTACT PRKS</h4>
         <hr>
         <h4>Need CallBack?? Leave Your Initials</h4>
         <input type="text" placeholder="Name" id="name">
-        <input type="email" placeholder="E-Mail" id="email">
+        <p id="nameError" class="error"></p>
+        <input type="text" placeholder="E-Mail" id="email">
+        <p id="emailError" class="error"></p>
         <input type="number" placeholder="Mobile Number" id="number">
-        <textarea placeholder="Message"></textarea>
+        <textarea placeholder="Message" id="message"></textarea>
+        <p id="messageError" class="error"></p>
         <button type="submit" id="button">SEND</button>
         <p class="final">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
     </form>
