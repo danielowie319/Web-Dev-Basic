@@ -27,3 +27,21 @@
 
   return isValid;
 }
+
+ function Alert() {
+    const button = document.getElementById("button");
+    
+     if (button.onclick) {
+      form = prompt("Are you sure you want to submit the form?");
+     } 
+    
+     if (form == "Yes" || form == "yes") {
+      alert("Thank you for submitting the form!")
+     }
+
+     if (form == "No" || form == "no") {
+      alert("Ok")
+     }
+    
+    
+ }
