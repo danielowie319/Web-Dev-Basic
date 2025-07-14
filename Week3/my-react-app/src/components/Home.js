@@ -5,12 +5,12 @@ function Home() {
   return (
     <div>
       <nav>
-        <ul>
-          <li><Link to='/Login'>Login</Link></li>
-          <li><Link to='/SignUp'>SignUp</Link></li>
-        </ul>
+            <a><Link to='/Login' className='Link first'>Login</Link></a>
+            <a><Link to='/SignUp' className='Link'>SignUp</Link></a>
       </nav>
-      <h1>Home</h1>
+      <h1>Welcome</h1>
+      <p>Click Login if you have an account.</p>
+      <p>Click SignUp if you don't have one</p>
     </div>
   )
 }

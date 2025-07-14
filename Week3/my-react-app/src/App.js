@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Login from './components/Login'
 import SignUp from './components/SignUp'
+import Login from './components/Login'
 import Home from './components/Home'
+import "./App.css"
 import { Routes, Route } from 'react-router-dom'
 
 
